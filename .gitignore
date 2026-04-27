@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+build/
+cmake-build-*/
+*.o
+*.out
+*.exe
+
+.DS_Store

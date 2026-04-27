@@ -1,0 +1,27 @@
+# C++
+
+C++ solutions should follow the LeetCode submission shape and include only the headers needed by the solution.
+
+Example:
+
+```cpp
+#include <unordered_map>
+#include <vector>
+
+using namespace std;
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> seen;
+        for (int i = 0; i < static_cast<int>(nums.size()); ++i) {
+            auto it = seen.find(target - nums[i]);
+            if (it != seen.end()) {
+                return {it->second, i};
+            }
+            seen[nums[i]] = i;
+        }
+        return {};
+    }
+};
+```
