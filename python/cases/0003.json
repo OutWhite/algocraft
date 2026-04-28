@@ -1,0 +1,21 @@
+{
+  "method": "lengthOfLongestSubstring",
+  "cases": [
+    {
+      "args": ["abcabcbb"],
+      "expected": 3
+    },
+    {
+      "args": ["bbbbb"],
+      "expected": 1
+    },
+    {
+      "args": ["pwwkew"],
+      "expected": 3
+    },
+    {
+      "args": ["abba"],
+      "expected": 2
+    }
+  ]
+}

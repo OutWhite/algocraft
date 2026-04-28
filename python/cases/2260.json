@@ -1,0 +1,17 @@
+{
+  "method": "minimumCardPickup",
+  "cases": [
+    {
+      "args": [[3, 4, 2, 3, 4, 7]],
+      "expected": 4
+    },
+    {
+      "args": [[1, 0, 5, 3]],
+      "expected": -1
+    },
+    {
+      "args": [[1, 2, 2, 3]],
+      "expected": 2
+    }
+  ]
+}
