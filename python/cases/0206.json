@@ -1,0 +1,27 @@
+{
+  "method": "reverseList",
+  "arg_types": ["linked_list"],
+  "expected_type": "linked_list",
+  "cases": [
+    {
+      "args": [[1, 2, 3, 4, 5]],
+      "expected": [5, 4, 3, 2, 1]
+    },
+    {
+      "args": [[1, 2]],
+      "expected": [2, 1]
+    },
+    {
+      "args": [[]],
+      "expected": []
+    },
+    {
+      "args": [[7]],
+      "expected": [7]
+    },
+    {
+      "args": [[-3, 0, 9]],
+      "expected": [9, 0, -3]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "method": "removeElement",
+  "cases": [
+    {
+      "args": [[3, 2, 2, 3], 3],
+      "expected": 2,
+      "mutations": [
+        {
+          "arg": 0,
+          "prefix": [2, 2]
+        }
+      ]
+    },
+    {
+      "args": [[0, 1, 2, 2, 3, 0, 4, 2], 2],
+      "expected": 5,
+      "mutations": [
+        {
+          "arg": 0,
+          "prefix": [0, 1, 3, 0, 4]
+        }
+      ]
+    },
+    {
+      "args": [[1, 2, 3], 4],
+      "expected": 3,
+      "mutations": [
+        {
+          "arg": 0,
+          "prefix": [1, 2, 3]
+        }
+      ]
+    },
+    {
+      "args": [[5, 5, 5], 5],
+      "expected": 0,
+      "mutations": [
+        {
+          "arg": 0,
+          "prefix": []
+        }
+      ]
+    },
+    {
+      "args": [[], 1],
+      "expected": 0,
+      "mutations": [
+        {
+          "arg": 0,
+          "prefix": []
+        }
+      ]
+    }
+  ]
+}

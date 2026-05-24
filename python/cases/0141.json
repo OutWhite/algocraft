@@ -1,0 +1,26 @@
+{
+  "method": "hasCycle",
+  "arg_types": ["linked_list_cycle"],
+  "cases": [
+    {
+      "args": [[[3, 2, 0, -4], 1]],
+      "expected": true
+    },
+    {
+      "args": [[[1, 2], 0]],
+      "expected": true
+    },
+    {
+      "args": [[[1], -1]],
+      "expected": false
+    },
+    {
+      "args": [[[], -1]],
+      "expected": false
+    },
+    {
+      "args": [[[1, 2, 3, 4], -1]],
+      "expected": false
+    }
+  ]
+}
