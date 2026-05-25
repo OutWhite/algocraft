@@ -1,0 +1,29 @@
+{
+  "method": "lengthOfLastWord",
+  "cases": [
+    {
+      "args": ["Hello World"],
+      "expected": 5
+    },
+    {
+      "args": ["   fly me   to   the moon  "],
+      "expected": 4
+    },
+    {
+      "args": ["luffy is still joyboy"],
+      "expected": 6
+    },
+    {
+      "args": ["a"],
+      "expected": 1
+    },
+    {
+      "args": ["day"],
+      "expected": 3
+    },
+    {
+      "args": ["day   "],
+      "expected": 3
+    }
+  ]
+}
