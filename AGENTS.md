@@ -18,10 +18,11 @@ The user is an experienced systems/CUTLASS/inference-engine engineer rebuilding 
 Current state:
 
 - Python syntax and basic control flow are now usable for short hand-written solutions.
-- Array scanning, slow/write pointers, simple state maintenance, and binary-search easy problems are passing quickly.
-- Stack, dict, linked-list, in-place array, and simple carry patterns have been reactivated.
+- Array scanning, slow/write pointers, simple state maintenance, and binary-search easy problems are passing reliably.
+- Stack, dict/set, linked-list, in-place array, reverse-write merge, and simple carry patterns have been reactivated.
 - The user is regaining subjective control and confidence: less hesitation when starting from a blank template, quicker self-review, and faster willingness to refactor.
-- Main remaining risk is still low-level hand-written state control on harder problems: loop boundaries, `None` checks, mutation vs return values, and off-by-one pointer/index placement.
+- The user can still solve practice problems after a demanding systems-engineering workday, though Python API recall can be slower under fatigue.
+- Main remaining risk is still low-level hand-written state control on harder problems: loop boundaries, `None` checks, mutation vs return values, read-pointer vs write-pointer conditions, and off-by-one pointer/index placement.
 
 Known error patterns from recent sessions:
 
@@ -42,22 +43,31 @@ Known error patterns from recent sessions:
 - `0035` Search Insert Position: binary search, passed quickly.
 - `0058` Length of Last Word: reverse string scan and trailing-space boundaries, passed on first attempt.
 - `0066` Plus One: reverse digit scan and carry; first version passed but was state-heavy, then was rewritten into a clean standard state machine.
+- `0088` Merge Sorted Array: reverse-write three-pointer merge, passed; key lesson was that loop conditions should protect read pointers, not just the result write pointer.
 - `0121` Best Time to Buy and Sell Stock: one-pass min-cost / max-profit state maintenance, passed cleanly.
 - `0141` Linked List Cycle: fast/slow pointer.
 - `0206` Reverse Linked List: iterative and recursive reversal concepts.
+- `0217` Contains Duplicate: hash seen pattern; passed with dict-as-unordered-map style, with note that `set` is more idiomatic when no value is needed.
 - `0283` Move Zeroes: in-place slow/write pointer with full mutation check, passed cleanly.
+- `0704` Binary Search: closed-interval binary search, passed cleanly.
 
 ## Latest Session Notes
 
-Most recent session completed four problems: `0058`, `0066`, `0121`, and `0283`.
+Most recent session completed three problems after a demanding workday: `0088`, `0704`, and `0217`.
 
 Observed progress:
 
-- Fewer Python semantics mistakes than earlier sessions.
-- `while` loop boundaries and reverse scans are improving.
-- In-place array mutation is now reliable on easy problems.
-- The user now questions test validity, especially mutation checks, instead of blindly trusting `PASS`.
-- Code review feedback is absorbed quickly; `0066` was rewritten from a correct but clunky carry version into a concise version.
+- `0088` showed improved pointer reasoning: the user identified that `ptr_res >= 0` is the wrong primary loop condition because it does not protect reads from `nums1` / `nums2`.
+- `0704` confirmed the closed-interval binary-search template is now stable.
+- `0217` confirmed the hash seen pattern is active again; the user used a Python `dict` like C++ `unordered_map`, which is correct but less idiomatic than `set`.
+- Fatigue mainly affected Python API recall, not problem solving or debugging quality.
+
+Phase assessment:
+
+- Clear improvement from early sessions: fewer language-semantics mistakes, faster implementation, better self-review, and stronger confidence.
+- Easy array/string/hash/binary-search problems are now mostly in a stable passing zone.
+- The training has moved from syntax recovery into boundary-control and classic-pattern reinforcement.
+- Next step is to gradually introduce medium-prep classics while keeping local case feedback and code review discipline.
 
 Current coaching emphasis:
 
@@ -95,5 +105,7 @@ Keep the near-term sequence focused on short code with dense boundary practice:
 - `0242` Valid Anagram
 - `0283` Move Zeroes
 - `0704` Binary Search
+- `0049` Group Anagrams
+- `0053` Maximum Subarray
 
 Avoid jumping too quickly into hard problems. The current goal is reliable manual control, not contest speed.
