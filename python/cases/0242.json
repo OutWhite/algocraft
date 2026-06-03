@@ -1,0 +1,29 @@
+{
+  "method": "isAnagram",
+  "cases": [
+    {
+      "args": ["anagram", "nagaram"],
+      "expected": true
+    },
+    {
+      "args": ["rat", "car"],
+      "expected": false
+    },
+    {
+      "args": ["aacc", "ccac"],
+      "expected": false
+    },
+    {
+      "args": ["", ""],
+      "expected": true
+    },
+    {
+      "args": ["a", "ab"],
+      "expected": false
+    },
+    {
+      "args": ["Aa", "aA"],
+      "expected": true
+    }
+  ]
+}

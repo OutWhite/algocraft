@@ -1,0 +1,25 @@
+{
+  "method": "groupAnagrams",
+  "cases": [
+    {
+      "args": [["eat", "tea", "tan", "ate", "nat", "bat"]],
+      "expected": [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+    },
+    {
+      "args": [[""]],
+      "expected": [[""]]
+    },
+    {
+      "args": [["a"]],
+      "expected": [["a"]]
+    },
+    {
+      "args": [["abc", "bca", "cab", "foo", "ofo", "bar"]],
+      "expected": [["abc", "bca", "cab"], ["foo", "ofo"], ["bar"]]
+    },
+    {
+      "args": [["duh", "ill"]],
+      "expected": [["duh"], ["ill"]]
+    }
+  ]
+}
