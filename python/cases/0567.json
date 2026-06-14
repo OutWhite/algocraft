@@ -1,0 +1,33 @@
+{
+  "method": "checkInclusion",
+  "cases": [
+    {
+      "args": ["ab", "eidbaooo"],
+      "expected": true
+    },
+    {
+      "args": ["ab", "eidboaoo"],
+      "expected": false
+    },
+    {
+      "args": ["adc", "dcda"],
+      "expected": true
+    },
+    {
+      "args": ["a", "a"],
+      "expected": true
+    },
+    {
+      "args": ["a", "b"],
+      "expected": false
+    },
+    {
+      "args": ["abc", "ccccbbbbaaaa"],
+      "expected": false
+    },
+    {
+      "args": ["hello", "ooolleoooleh"],
+      "expected": false
+    }
+  ]
+}

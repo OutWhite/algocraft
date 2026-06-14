@@ -1,0 +1,33 @@
+{
+  "method": "minWindow",
+  "cases": [
+    {
+      "args": ["ADOBECODEBANC", "ABC"],
+      "expected": "BANC"
+    },
+    {
+      "args": ["a", "a"],
+      "expected": "a"
+    },
+    {
+      "args": ["a", "aa"],
+      "expected": ""
+    },
+    {
+      "args": ["aa", "aa"],
+      "expected": "aa"
+    },
+    {
+      "args": ["ab", "b"],
+      "expected": "b"
+    },
+    {
+      "args": ["bba", "ab"],
+      "expected": "ba"
+    },
+    {
+      "args": ["aaaaaaaaaaaabbbbbcdd", "abcdd"],
+      "expected": "abbbbbcdd"
+    }
+  ]
+}
