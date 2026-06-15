@@ -1,0 +1,34 @@
+{
+  "method": "isPalindrome",
+  "arg_types": ["linked_list"],
+  "cases": [
+    {
+      "args": [[1, 2, 2, 1]],
+      "expected": true
+    },
+    {
+      "args": [[1, 2]],
+      "expected": false
+    },
+    {
+      "args": [[1]],
+      "expected": true
+    },
+    {
+      "args": [[]],
+      "expected": true
+    },
+    {
+      "args": [[1, 2, 3, 2, 1]],
+      "expected": true
+    },
+    {
+      "args": [[1, 2, 3, 4, 2, 1]],
+      "expected": false
+    },
+    {
+      "args": [[1, 1]],
+      "expected": true
+    }
+  ]
+}

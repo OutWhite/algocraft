@@ -40,10 +40,10 @@ Progress labels:
   - Practiced: `0496`, `0739`, `0503`, `1475`, `0907`, `0084`, `0042`.
   - Next: periodic review and explain-from-invariant drills.
 
-- `[~]` Linked List
-  - Focus: dummy nodes, reversal, fast/slow pointers, cycle entry, deletion by offset.
-  - Practiced: `0002`, `0021`, `0141`, `0206`.
-  - Next: `0019`, `0142`, `0234`, `0023`.
+- `[x]` Linked List
+  - Focus: dummy nodes, reversal, fast/slow pointers, cycle entry, deletion by offset, local reversal and reconnection.
+  - Practiced: `0002`, `0019`, `0021`, `0141`, `0142`, `0206`, `0234`, `0092`, `0024`, `0025`.
+  - Note: keep `0023` Merge k Sorted Lists in the heap/priority-queue module, not the core pointer-manipulation sequence.
 
 - `[ ]` Binary Tree
   - Focus: DFS recursion shape, BFS level order, return-value semantics, BST invariants, LCA.
@@ -65,9 +65,10 @@ Progress labels:
   - Focus: state definition, transition, initialization, iteration order.
   - Next: `0070`, `0198`, `0322`, `0300`, `1143`, `0072`.
 
-- `[ ]` Greedy / Intervals
+- `[~]` Greedy / Intervals
   - Focus: sort-based decisions, local choice proof, interval merging/removal.
-  - Next: `0056`, `0055`, `0045`, `0122`, `0435`.
+  - Practiced: `0055`, `0045`, `0056`.
+  - Next: `0435` Non-overlapping Intervals, `0122` Best Time to Buy and Sell Stock II, `0134` Gas Station.
 
 ## Readiness Criteria
 
@@ -81,8 +82,8 @@ For a module to count as interview-usable:
 
 ## Next Training Order
 
-1. Finish and periodically review monotonic stack explanations.
-2. Cover linked list medium: `0019`, `0142`, `0234`.
-3. Start binary tree DFS/BFS as a full module.
-4. Add backtracking and graph BFS/topological sort.
-5. Add heap and DP after traversal/backtracking patterns are active.
+1. Continue greedy / intervals: `0435`, `0122`, `0134`.
+2. Start binary tree DFS/BFS as a full module.
+3. Add backtracking and graph BFS/topological sort.
+4. Add heap and DP after traversal/backtracking patterns are active.
+5. Periodically review completed monotonic stack, sliding window, and linked-list modules under speed pressure.

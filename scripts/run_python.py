@@ -106,6 +106,8 @@ def prepare_args(module: object, args: list[Any], arg_types: list[str]) -> list[
 def prepare_actual(actual: Any, expected_type: str | None) -> Any:
     if expected_type == "linked_list":
         return linked_list_to_list(actual)
+    if expected_type == "linked_list_node_value":
+        return None if actual is None else actual.val
     return actual
 
 

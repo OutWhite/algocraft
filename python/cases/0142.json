@@ -1,0 +1,35 @@
+{
+  "method": "detectCycle",
+  "arg_types": ["linked_list_cycle"],
+  "expected_type": "linked_list_node_value",
+  "cases": [
+    {
+      "args": [[[3, 2, 0, -4], 1]],
+      "expected": 2
+    },
+    {
+      "args": [[[1, 2], 0]],
+      "expected": 1
+    },
+    {
+      "args": [[[1], -1]],
+      "expected": null
+    },
+    {
+      "args": [[[], -1]],
+      "expected": null
+    },
+    {
+      "args": [[[1, 2, 3, 4], -1]],
+      "expected": null
+    },
+    {
+      "args": [[[1, 2, 3, 4, 5], 3]],
+      "expected": 4
+    },
+    {
+      "args": [[[7], 0]],
+      "expected": 7
+    }
+  ]
+}
